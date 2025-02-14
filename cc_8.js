@@ -15,3 +15,13 @@ const calculateDiscount =function(price, discountRate) {
 
 console.log(calculateDiscount(100, 0.2)); // Expected output: "Final Price: $80.00"
 console.log(calculateDiscount(250, 0.15)); // Expected output: "Final Price: $212.50"
+
+// Task 3
+const calculateSeriveFee = (amount, seriveType) => {
+   let feeRate = serviceType === "Premium" ? 0.15 : serviceType === "Standard" ? 0.10 ; 0.05;
+   let serviceFee = amount * feeRate;
+   return `Service Fee: $${serviceFee.toFixed(2)}`;
+};
+console.log(calculateServiceFee(200, "Premium")); // Expected output: "Service Fee: $30.00"
+console.log(calculateServiceFee(500, "Standard")); // Expected output: "Service Fee: $50.00"
+
