@@ -35,3 +35,12 @@ return `Total Rental Cost: $${totalCost}`;
 console.log(calculateRentalCost(3, "Economy", true)); // Expected output: "Total Rental Cost: $180"
 console.log(calculateRentalCost(5, "Luxury", false)); // Expected output: "Total Rental Cost: $500"
 
+// Task 5
+function calculateLoanPayment(principal, rate, time) {
+    let totalPayment = principal + (principal * rate * time);
+    return `Total Payment: $${totalPayment.toFixed(2)}`;
+}
+
+console.log(calculateLoanPayment(1000, 0.05, 2)); // Expected output: "Total Payment: $1100.00"
+console.log(calculateLoanPayment(5000, 0.07, 3)); // Expected output: "Total Payment: $6050.00"
+
